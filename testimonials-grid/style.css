@@ -1,3 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
 body {
   background-color: #ecf2f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+.container {
+  max-width: 1110px;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "purple purple gray white-1"
+    "white-2 black black white-1";
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.card .header {
+  display: flex;
+  align-items: center;
+  gap: 17px;
+}
+
+.header h3 {
+  color: white;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.header p {
+  color: white;
+  font-weight: 400;
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.card .highlight {
+  color: white;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.card .details {
+  color: white;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 18px;
+  opacity: 0.7;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.card.purple {
+  grid-area: purple;
+  background-color: #733fc8;
+}
+
+.card.gray {
+  grid-area: gray;
+  background-color: #48556a;
+}
+
+.card.white:nth-child(3) {
+  grid-area: white-2;
+  background-color: white;
+}
+
+.card.black {
+  grid-area: black;
+  background-color: #19202d;
+}
+
+.card.white:nth-child(5) {
+  grid-area: white-1;
+  background-color: white;
 }
