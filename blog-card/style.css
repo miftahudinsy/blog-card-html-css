@@ -1,0 +1,66 @@
+body {
+  background-color: #f4d04e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Figtree", sans-serif;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 384px;
+  height: 522px;
+  padding: 20px;
+  border: 1px solid #111111;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 8px 8px black;
+}
+
+.content {
+  color: #111111;
+}
+
+.content .published-date {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.content .tag {
+  background-color: #f4d04e;
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.blog-image img {
+  width: 100%;
+}
+
+.content .title {
+  font-weight: 800;
+}
+
+.content .description {
+  color: #6b6b6b;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author .author-name {
+  font-size: 14px;
+  font-weight: bold;
+}
