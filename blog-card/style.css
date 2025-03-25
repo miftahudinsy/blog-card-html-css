@@ -70,3 +70,35 @@ body {
   font-size: 14px;
   font-weight: bold;
 }
+
+/* Media Query for 375x812 pixel screens */
+@media (max-width: 375px) and (max-height: 812px) {
+  .card {
+    width: 85%; /* Adjust width for smaller screens */
+    height: auto; /* Adjust height to fit content */
+    padding: 15px; /* Reduce padding */
+    box-shadow: 4px 4px black; /* Reduce shadow */
+    gap: 20px;
+  }
+
+  .content .title {
+    font-size: 1.2rem; /* Adjust title font size */
+  }
+
+  .content .description {
+    font-size: 14px; /* Adjust description font size */
+  }
+
+  .content .published-date,
+  .author .author-name {
+    font-size: 12px; /* Adjust date and author name font size */
+  }
+  .content .tag {
+    font-size: 12px;
+    padding: 3px 8px;
+  }
+  .author img {
+    width: 30px;
+    height: 30px;
+  }
+}
