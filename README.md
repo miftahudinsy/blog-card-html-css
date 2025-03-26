@@ -1,6 +1,6 @@
-# Advanced CSS Projects - Frontend Mentor Challenges
+# Advanced CSS Projects
 
-Repository ini berisi implementasi slicing dari beberapa desain Figma yang berasal dari Frontend Mentor Challenges. Project ini dibuat sebagai bagian dari pembelajaran Advanced CSS.
+Repository ini berisi implementasi slicing dari beberapa desain Figma yang berasal dari Frontend Mentor. Project ini dibuat sebagai bagian dari pembelajaran Advanced CSS.
 
 ## Daftar Project
 
