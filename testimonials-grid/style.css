@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
 }
 
 body {
@@ -11,10 +11,12 @@ body {
   align-items: center;
   min-height: 100vh;
   font-family: "Barlow Semi Condensed", sans-serif;
+  padding: 20px;
 }
 
 .container {
   max-width: 1110px;
+  margin: 0 auto;
 }
 
 .testimonial-grid {
@@ -32,6 +34,8 @@ body {
   justify-content: space-between;
   padding: 30px;
   border-radius: 10px;
+  gap: 20px;
+  box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.2474);
 }
 
 .card .header {
@@ -41,28 +45,24 @@ body {
 }
 
 .header h3 {
-  color: white;
   font-weight: 500;
   font-size: 13px;
 }
 
 .header p {
-  color: white;
   font-weight: 400;
   font-size: 11px;
   opacity: 0.5;
 }
 
 .card .highlight {
-  color: white;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 20px;
 }
 
 .card .details {
-  color: white;
   font-size: 13px;
-  font-weight: 300;
+  font-weight: 500;
   line-height: 18px;
   opacity: 0.7;
 }
@@ -76,24 +76,70 @@ body {
 .card.purple {
   grid-area: purple;
   background-color: #733fc8;
+  color: white;
 }
 
 .card.gray {
   grid-area: gray;
   background-color: #48556a;
+  color: white;
 }
 
 .card.white:nth-child(3) {
   grid-area: white-2;
   background-color: white;
+  color: #48556a;
 }
 
 .card.black {
   grid-area: black;
   background-color: #19202d;
+  color: #ecf2f8;
 }
 
 .card.white:nth-child(5) {
   grid-area: white-1;
   background-color: white;
+  color: #48556a;
+}
+
+@media (max-width: 1000px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "purple purple gray"
+      "white-2 black black"
+      "white-1 white-1 white-1";
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "purple purple"
+      "gray white-2"
+      "black black"
+      "white-1 white-1";
+  }
+}
+
+@media (max-width: 576px) {
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "purple"
+      "gray"
+      "white-2"
+      "black"
+      "white-1";
+  }
+
+  .card {
+    padding: 25px;
+  }
+
+  .highlight {
+    font-size: 18px;
+  }
 }
